@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding-top: 90px;
+  color: white;
+} 
+
+.container {
+  display: grid;
+  color: white;
+  width: 90vw;
+  aspect-ratio: auto ;
+  margin-inline: auto;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+
+}
+
+.item.first {
+  grid-area: primero;
+}
+.item.second {
+  grid-area: segundo;
+}
+.item.third {
+  grid-area: tercero;
+}
+.item.fourth {
+  grid-area: cuarto;
+}
+.item.fifth {
+  grid-area: quinto;
+}
+.item.sixth {
+  grid-area: sexto;
+}
+.item.seventh {
+  grid-area: septimo;
+}
+.item.eighth {
+  grid-area: octavo;
+}
+.item.ninth {
+  grid-area: noveno;
+}
+
+.container {
+  grid-template-areas:
+    "primero primero segundo segundo tercero tercero"
+    "cuarto cuarto quinto quinto sexto sexto"
+    "septimo septimo octavo octavo noveno noveno";
+  --delay-container-delay: 100ms;
+}
+
+.container:hover > .item:not(:hover) {
+  opacity: 0.2;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: all 500ms ease-in-out;
+}
+
+.item {
+  border-radius: 10px;
+  border: orange 5px solid;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: all 250ms ease-in-out;
+  flex-grow: 1;
+}
+
+.item:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+/* Samsung Galaxy Tab 10	vp: 800 x 1280 */
+
+@media screen and (max-width: 800px){
+
+  .container {
+    grid-template-areas:
+      "primero primero" 
+      "segundo segundo"
+      "tercero tercero"
+       "cuarto cuarto"
+      "quinto quinto"
+       "sexto sexto"
+      "septimo septimo"
+       "octavo octavo"
+       "noveno noveno";
+    --delay-container-delay: 100ms;
+  }
+
+}
