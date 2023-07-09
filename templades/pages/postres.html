@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<body>
+    <div class="contenedor--postres">
+        <header class="topheader">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <img height=45px width=130px src="../../media/logonav.png" alt="logo">
+                    <div>
+                        Comidas Regionales
+                    </div>
+                </a>
+                <input class="checkbox" type="checkbox">
+                <img class="icons iconbarra" src="../../media/bars.svg" alt="abrir menú" />
+                <img class="icons iconcerrar" src="../../media/xmark.svg" alt="cerrar menú" />
+
+                <ul class="menu">
+                    <li><a href="../../../index.html">Inicio</a></li>
+                    <li><a href="../menu/menu.html">Menú</a></li>
+                    <li><a class="activo" href="../postres/postres.html">Postres</a></li>
+                    <li><a href="../catering/catering.html">Catering</a></li>
+                    <li><a href="../Cerveza/Cerveza.html">Cerveza</a></li>
+                    <li><a href="../contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside class="presentacion">
+            <div class="informacion">
+                <h1>Pedí tu postre favorito</h1>
+                <div>
+                    <p>Fúndete de placer con nuestras mejores recetas dulces,</p>
+                    <p>tenemos los más deliciosos postres y tortas. Qué esperas? Pruébalas!</p>
+                </div>
+                <div class="informacion--boton">
+                    <button onclick="location.href='../contacto/contacto.html'">Solicitar Menú</button>
+                </div>
+            </div>
+
+            <div class="presentacion--imagen">
+                <img src="../../media/postres.png" alt="Imagen presentacion">
+            </div>
+        </aside>
+
+        <main class="postres--tradicionales">
+            <h2 class="postres--titulo">Postres Tradicionales</h2>
+            <div class="postres">
+                <article class="postre">
+                    <img src="../../media/chocotorta.png" alt="Chocotorta">
+                    <h1>Chocotorta</h1>
+                    <p>Torta con capas de galletitas de chocolate mojadas en leche chocolatada con una exquisita crema
+                        de dulce de leche y queso crema. Un postre ideal para cualquier ocasión.</p>
+                    <div class="postre--info">
+                        <p>$599.99</p>
+                        <button onclick="location.href='../contacto/contacto.html'">+</button>
+                    </div>
+                </article>
+                <article class="postre">
+                    <img src="../../media/tiramisu.webp" alt="Tiramisú">
+                    <h1>Tiramisú</h1>
+                    <p>El tiramisú es un postre tradicional italiano con una base de bizcochos bañados en café y
+                        cubiertos por una crema de huevos, queso mascarpone y azúcar y, finalmente, de una capa de cacao
+                        en polvo.</p>
+                    <div class="postre--info">
+                        <p>$699.99</p>
+                        <button onclick="location.href='../contacto/contacto.html'">+</button>
+                    </div>
+                </article>
+                <article class="postre">
+                    <img src="../../media/flan casero.png" alt="Flan de Huevo">
+                    <h1>Flan de Huevo</h1>
+                    <p>El Flan es un postre elaborado a base de yemas de huevos, azúcar, leche, aromatizado con vainilla
+                        y bañado por una fina capa de caramelo líquido. De textura suave y delicada y de un color beige
+                        por dentro y caramelo brillante por fuera.</p>
+                    <div class="postre--info">
+                        <p>$399.99</p>
+                        <button onclick="location.href='../contacto/contacto.html'">+</button>
+                    </div>
+                </article>
+                <article class="postre">
+                    <img src="../../media/copa helada.png" alt="Copa Helada">
+                    <h1>Copa Helada</h1>
+                    <p>copa de helado con frutas, galletas y crema. Es un postre delicioso y muy apetecido,
+                        especialmente por los niños pero apto también para adultos. Esta copa helada tiene la
+                        combinación de sabores perfecta.</p>
+                    <div class="postre--info">
+                        <p>$499.99</p>
+                        <button onclick="location.href='../contacto/contacto.html'">+</button>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+{% endblock %}
