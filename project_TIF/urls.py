@@ -1,5 +1,5 @@
 """
-URL configuration for project_TIF project.
+URL configuration for TIF project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,15 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
-from .views import Index , Catering , Cerveza , Contacto , Menu , Postres
+from .views import Landing , Catering , Cerveza , Contacto , Menu , Postres
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Index.as_view(),name="index")
-    path('catering/', Catering.as_view(),name="catering")
-    path('cerveza/', Cerveza.as_view(),name="cerveza")
-    path('contacto/', Contacto.as_view(),name="contacto")
-    path('menu/', Menu.as_view(),name="menu")
-    path('postre/', Postre.as_view(),name="postre")
+    path('', Landing.as_view(),name="landing"),
+    path('catering/', Catering.as_view(),name="catering"),
+    path('cerveza/', Cerveza.as_view(),name="cerveza"),
+    path('contacto/', Contacto.as_view(),name="contacto"),
+    path('menu/', Menu.as_view(),name="menu"),
+    path('postres/', Postres.as_view(),name="postres"),
 ]

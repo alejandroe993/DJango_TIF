@@ -1,19 +1,19 @@
 from django.views.generic import TemplateView
 
-class Index(TemplateView):
-    template_name = "page/index.html"
+class Landing(TemplateView):
+    template_name = "pages/landing_page.html"
     
 class Catering(TemplateView):
-    template_name = "page/catering.html"
+    template_name = "pages/catering.html"
 
 class Cerveza(TemplateView):
-    template_name = "page/cerveza.html"
+    template_name = "pages/cerveza.html"
     
 class Contacto(TemplateView):
-    template_name = "page/contacto.html"
+    template_name = "pages/contacto.html"
     
 class Menu(TemplateView):
-    template_name = "page/menu.html"
+    template_name = "pages/menu.html"
     
 class Postres(TemplateView):
-    template_name = "postres.html"
+    template_name = "pages/postres.html"
