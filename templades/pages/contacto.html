@@ -1,98 +1,110 @@
-{% extends 'base.html' %}
-
-
+{% extends "base.html" %} 
+{% load static %}
 {% block content %}
 
-  <div class="contact_form">
+<div class="contact_form">
+  <div class="formulario">
+    <h1>Formulario de contacto</h1>
+    <h3>Escríbenos y en breve los pondremos en contacto contigo.</h3>
 
-    <div class="formulario">
-      <h1>Formulario de contacto</h1>
-      <h3>Escríbenos y en breve los pondremos en contacto contigo.</h3>
+    <form action="submeter-formulario.php" method="post" id="formul">
+      <p>
+        <label for="nombre" class="colocar_nombre"
+          >Nombre
+          <span class="obligatorio">*</span>
+        </label>
+        <input
+          type="text"
+          name="introducir_nombre"
+          id="nombre"
+          required="obligatorio"
+          placeholder="Escribe tu nombre"
+        />
+      </p>
 
-      <form action="submeter-formulario.php" method="post" id="formul">
+      <p>
+        <label for="direccion" class="colocar_direccion"
+          >Dirección
+          <span class="obligatorio">*</span>
+        </label>
+        <input
+          type="text"
+          name="introducir_direccion"
+          id="direcion"
+          required="obligatorio"
+          placeholder="Escribe tu Direción"
+        />
+      </p>
+
+      <p>
+        <label for="telefono" class="colocar_telefono"
+          >Teléfono
+          <span class="obligatorio">*</span>
+        </label>
+        <input
+          type="number"
+          name="introducir_telefono"
+          id="telefono"
+          required="obligatorio"
+          placeholder="Escribe tu teléfono"
+        />
+      </p>
+      <div>
         <p>
-          <label for="nombre" class="colocar_nombre">Nombre
-            <span class="obligatorio">*</span>
-          </label>
-          <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-            placeholder="Escribe tu nombre">
+          <label for="selecMenu" class="selecione_menu">Selecione Menú </label>
         </p>
-
+        <br />
+        <select name="selec_menu" id="num_menu">
+          <option value="Nada">Ningún Menú Selecionado</option>
+          <option value="m01">Empanadas</option>
+          <option value="m02">Picada</option>
+          <option value="m03">Dorado a la pizza</option>
+          <option value="m04">Tabla de asado</option>
+          <option value="m05">Hamburguesa gourmet</option>
+          <option value="m06">Tortilla de papas</option>
+          <option value="m07">Pollo al verdeo con papas</option>
+          <option value="m08">Pechuga a la plancha con verduras</option>
+          <option value="m09">Solomillo de cerdo en salsa de 4 quesos</option>
+        </select>
+      </div>
+      <br />
+      <div>
         <p>
-          <label for="direccion" class="colocar_direccion">Dirección
-            <span class="obligatorio">*</span>
+          <label for="selecPostre" class="selecione_postre"
+            >Selecione Postre
           </label>
-          <input type="text" name="introducir_direccion" id="direcion" required="obligatorio"
-            placeholder="Escribe tu Direción">
         </p>
+        <br />
 
-        <p>
-          <label for="telefono" class="colocar_telefono">Teléfono
-            <span class="obligatorio">*</span>
-          </label>
-          <input type="number" name="introducir_telefono" id="telefono" required="obligatorio"
-            placeholder="Escribe tu teléfono">
-        </p>
-        <div>
+        <select name="selec_postre" id="num_postre">
+          <option value="Nada">Ningún Postre Selecionado</option>
+          <option value="m01">Chocotorta con baño de chocolate</option>
+          <option value="m02">Tiramisú</option>
+          <option value="m03">Flan de Huevo</option>
+          <option value="m04">Copa Helada</option>
+        </select>
+      </div>
+
+      <button id="open">Realizar Pedido</button>
+
+      <div id="modal_container" class="modal-container">
+        <div class="modal">
+          <h1>Su pedido fue recibido</h1>
           <p>
-            <label for="selecMenu" class="selecione_menu">Selecione Menú
-            </label>
+            Su pedido fue recibido con exito. Nos pondremos en contacto para
+            reslizar la entraga de su pedido. Desde ya muchas gracias.
           </p>
-          <br>
-          <select name="selec_menu" id="num_menu">
-            <option value="Nada">Ningún Menú Selecionado</option>
-            <option value="m01">Empanadas</option>
-            <option value="m02">Picada</option>
-            <option value="m03">Dorado a la pizza</option>
-            <option value="m04">Tabla de asado</option>
-            <option value="m05">Hamburguesa gourmet</option>
-            <option value="m06">Tortilla de papas</option>
-            <option value="m07">Pollo al verdeo con papas</option>
-            <option value="m08">Pechuga a la plancha con verduras</option>
-            <option value="m09">Solomillo de cerdo en salsa de 4 quesos</option>
-          </select>
+          <button id="close">Cerrar</button>
         </div>
-        <br>
-        <div>
-          <p>
-            <label for="selecPostre" class="selecione_postre">Selecione Postre
-            </label>
-          </p>
-          <br>
+      </div>
 
-          <select name="selec_postre" id="num_postre">
-            <option value="Nada">Ningún Postre Selecionado</option>
-            <option value="m01">Chocotorta con baño de chocolate</option>
-            <option value="m02">Tiramisú</option>
-            <option value="m03">Flan de Huevo</option>
-            <option value="m04">Copa Helada</option>
-          </select>
-        </div>
-
-        <button id="open">
-          Realizar Pedido
-        </button>
-
-        <div id="modal_container" class="modal-container">
-          <div class="modal">
-            <h1>Su pedido fue recibido</h1>
-            <p>
-              Su pedido fue recibido con exito.
-              Nos pondremos en contacto para reslizar la entraga de su pedido.
-              Desde ya muchas gracias.
-            </p>
-            <button id="close">Cerrar</button>
-          </div>
-        </div>
-
-        <p class="aviso">
-          <span class="obligatorio"> * </span>los campos son obligatorios.
-        </p>
-
-      </form>
-    </div>
+      <p class="aviso">
+        <span class="obligatorio"> * </span>los campos son obligatorios.
+      </p>
+    </form>
   </div>
+</div>
 
-  <script src="../../js/Formulario.js"> </script>
+<script src="../../js/Formulario.js"></script>
 
 {% endblock %}

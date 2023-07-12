@@ -1,13 +1,13 @@
-
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} 
 {% load static %}
+{% block content %}
 
 <main class="main">
   <h1>Menú</h1>
 
   <div class="container">
     <div class="grid item first">
-      <a href="../contacto/contacto.html"
+      <a href="{% url 'contacto' %}"
         ><img
           src="{% static './media/imagen01.jpg' %}"
           alt="Empanadas fritas o al horno"
@@ -22,7 +22,7 @@
     </div>
 
     <div class="grid item second">
-      <a href="../contacto/contacto.html"
+      <a href="{% url 'contacto' %}"
         ><img src="{% static './media/imagen02.jpg' %}" width="250" height="250"
       /></a>
       <figcaption>
@@ -33,7 +33,7 @@
     </div>
 
     <div class="grid item third">
-      <a href="../contacto/contacto.html"
+      <a href="{% url 'contacto' %}"
         ><img src="{% static './media/imagen03.jpg' %}" width="250" height="250"
       /></a>
       <figcaption>
@@ -44,7 +44,7 @@
     </div>
 
     <div class="grid item fourth">
-      <a href="../contacto/contacto.html"
+      <a href="{% url 'contacto' %}"
         ><img src="{% static './media/imagen04.jpg' %}" width="250" height="250"
       /></a>
       <figcaption>
@@ -55,7 +55,7 @@
     </div>
 
     <div class="grid item fifth">
-      <a href="../contacto/contacto.html"
+      <a href="{% url 'contacto' %}"
         ><img src="{% static './media/imagen05.jpg' %}" width="250" height="250"
       /></a>
       <figcaption>
@@ -66,7 +66,7 @@
     </div>
 
     <div class="grid item sixth">
-      <a href="../contacto/contacto.html"
+      <a href="{% url 'contacto' %}"
         ><img src="{% static './media/imagen06.jpg' %}" width="250" height="250"
       /></a>
       <figcaption>
@@ -77,7 +77,7 @@
     </div>
 
     <div class="grid item seventh">
-      <a href="../contacto/contacto.html"
+      <a href="{% url 'contacto' %}"
         ><img src="{% static './media/imagen07.jpg' %}" width="250" height="250"
       /></a>
       <figcaption>
@@ -88,7 +88,7 @@
     </div>
 
     <div class="grid item eighth">
-      <a href="../contacto/contacto.html"
+      <a href="{% url 'contacto' %}"
         ><img src="{% static './media/imagen08.jpg' %}" width="250" height="250"
       /></a>
       <figcaption>
@@ -99,7 +99,7 @@
     </div>
 
     <div class="grid item ninth">
-      <a href="../contacto/contacto.html"
+      <a href="{% url 'contacto' %}"
         ><img src="{% static './media/imagen09.jpg' %}" width="250" height="250"
       /></a>
       <figcaption>
