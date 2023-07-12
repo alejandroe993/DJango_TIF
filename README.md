@@ -53,8 +53,7 @@ Para crear una aplicación en Django se siguieron estos pasos:
  ![240029475-6de6981c-414e-4687-8e69-55a04e541570](https://github.com/alejandroe993/DJango_TIF/assets/95320686/8f02dacc-8a75-4f18-aad8-4d883e308e6f)
 
 
-![1_slHeZngyeUr7ypEz7MNL5w](https://github.com/alejandroe993/DJango_TIF/assets/95320686/d804cb3f-717b-4d41-9b35-01d678b92c4a)
-
+<p> <img src ="https://github.com/alejandroe993/DJango_TIF/assets/95320686/d804cb3f-717b-4d41-9b35-01d678b92c4a" width="466" height="210"> </p>
 
 ## Personas Desarrolladoras del Proyecto
 ●Espinosa, Alejandro (https://github.com/alejandroe993)
