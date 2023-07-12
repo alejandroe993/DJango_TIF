@@ -30,12 +30,20 @@ El proyecto inicial de Front End con su respectiva documentacion se puede encont
 Para crear una aplicación en Django se siguieron estos pasos:
 
 ● Se crea el proyecto Django usando el comando django-admin startproject nombre_proyecto
+
 ● Dentro del proyecto se crean las aplicaciones usando el comando python manage.py startapp nombre_app
+
 ● Se registran los modelos de la aplicación en el archivo models.py
+
 ● Se crean las migraciones con el comando python manage.py makemigrations
+
 ● Se aplican las migraciones con el comando python manage.py migrate
+
 ● Se crean las vistas en el archivo views.py y se mapean a URLs en urls.py
+
 ● Se definen las plantillas HTML en la carpeta templates
+
+Lo pasos detallados se encuentran en el siguiente repositorio: https://github.com/andru-oca/Django-Backend-Inicial
 
 
 ## Tecnologías Y herramientas utilizadas
