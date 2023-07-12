@@ -2,6 +2,7 @@
 
 <p align="center"> <img src ="https://github.com/alejandroe993/DJango_TIF/assets/95320686/ac81ed8d-e4d2-4c15-ae55-fd42162fd49b" width="390" height="150"> </p>
 
+
 ## Introduccion
 Proyecto Web desarrollado como Trabajo Practico Integrador del curso Codo a Codo 4.0. El mismo es un trabajo grupal y una continuacion del proyector realizado en Front End, y debe cumplir con los siguientes requisitos:
 
@@ -18,6 +19,7 @@ Proyecto Web desarrollado como Trabajo Practico Integrador del curso Codo a Codo
 Para el proyecto inicial se creo una pagina web de una cadena de restaurantes llamada "JAJA Comidas Regionales". La misma cuenta con 6 paginas HTML realizadas por los distintos miembros del grupo. Las mismas son : Inicio, Menu, Postres, Cervezas, Catering y Contacto. Todas a su vez estan estilizadas utilizando herramientas de CSS y algunas empleando tecnologias de Javascript. Se trata de una pagina web responsive con 3 puntos de corte para ser visible en computadoras, tablets y celulares.
 
 ![240023746-8ecb45a4-3d89-41c5-8b97-d5d6dca44588](https://github.com/alejandroe993/DJango_TIF/assets/95320686/250e8d85-ecc5-4afd-9248-030ac0f6f2c9)
+
 
 
 ## Proyecto Front End
@@ -46,6 +48,7 @@ Para crear una aplicación en Django se siguieron estos pasos:
 Lo pasos detallados se encuentran en el siguiente repositorio: https://github.com/andru-oca/Django-Backend-Inicial
 
 
+
 ## Tecnologías Y herramientas utilizadas
 
  ●HTML
@@ -62,6 +65,8 @@ Lo pasos detallados se encuentran en el siguiente repositorio: https://github.co
 
 
 <p> <img src ="https://github.com/alejandroe993/DJango_TIF/assets/95320686/d804cb3f-717b-4d41-9b35-01d678b92c4a" width="466" height="210"> </p>
+
+
 
 ## Personas Desarrolladoras del Proyecto
 ●Espinosa, Alejandro (https://github.com/alejandroe993)
