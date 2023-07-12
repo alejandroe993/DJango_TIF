@@ -7,7 +7,7 @@ class Catering(TemplateView):
     template_name = "page/catering.html"
 
 class Cerveza(TemplateView):
-    template_name = "page/cerveze.html"
+    template_name = "page/cerveza.html"
     
 class Contacto(TemplateView):
     template_name = "page/contacto.html"
